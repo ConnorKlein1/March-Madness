@@ -1,0 +1,3 @@
+- [ ] If I click on the T-Rank team, there is more data on that team and games! Maybe should look into.
+- [ ] Unable to have learning rate below 9 * 10 ** -6
+- [ ] Just use tensorflow
