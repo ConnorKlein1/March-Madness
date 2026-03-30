@@ -14,14 +14,17 @@ These instructions will get you a copy of the project up and running on your loc
 Uses 64 bit python. See [requirements.txt](requirements.txt) for required packages.
 
 ### Example
-To predict:
+#### Predict:
 ```sh
 python main.py predict -y 2026 -f "folder\trained_model.npy" -l [NN.Sigmoid(38,64),NN.Sigmoid(64,1)]
 ```
 
-To train:
+#### Train:
 ```sh
 python main.py train -e 500 -f "folder\model_to_train" -l [NN.Sigmoid(38,64),NN.Sigmoid(64,1)]
+```
+```sh
+python main.py train -e 500 -f "folder\model_to_load.npy" -l [NN.Sigmoid(38,64),NN.Sigmoid(64,1)] --load
 ```
 
 ## License
@@ -43,3 +46,5 @@ This project is licensed under the MIT License.
 
 - Added Bracket class
 - cleaned up and prepared repo for github.
+- Fixed bug in Sigmoid.
+- Added CLI
